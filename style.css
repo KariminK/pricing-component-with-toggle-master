@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+h2{
+    color: rgb(100, 100, 100);
+    font-size: 25px;
+}
+#des{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(169, 169, 169);
+    font-size: 10px;
+    margin-bottom: 30px;
+}
+#pricing-planes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.pricing-plane {
+    background-color: hsl(240, 78%, 98%);
+    border-radius: 5px;
+    list-style: none;
+    padding: 15px;
+    padding-bottom: 30px;
+    margin: 5px;
+    color: rgb(62, 62, 62);
+}
+.primary{
+    background: linear-gradient(120deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    border-top: 1px rgb(162, 162, 162) solid;
+}
+.primary p{
+    border-top: 1px rgb(162, 162, 162) solid;
+}
+.pricing-plane p{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.primary .last{
+    border-bottom: 1px rgb(162, 162, 162) solid;
+}
+.btn-more{
+    text-transform: uppercase;
+    font-size: 10px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid hsl(234, 14%, 74%);
+    border-radius: 5px;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    transition: all 200ms;
+}
+.btn-more:hover{
+    background: transparent;
+    color: hsl(233, 13%, 49%);
+    cursor: pointer;
+}
+.primary .btn-more{
+    background: white;
+    color: hsl(233, 13%, 49%);
+}
+.primary .btn-more:hover{
+    background: transparent;
+    color: white;
+}
+.attribution{
+    font-size: small;
+}
+.attribution a{
+    text-decoration: none;
+}
+
+.switch {
+    position: relative;
+    width: 40px;
+    height: 24px;
+    margin: 10px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider:before{
+    transform: translateX(15px);
+}
